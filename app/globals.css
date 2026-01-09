@@ -11,6 +11,7 @@
 
   --color-*: initial;
   --spacing-*: initial;
+  --radius-*: initial;
 
   --color-primary-10: #ffd1dc1a;
   --color-primary-50: #ffd1dc80;
@@ -89,6 +90,17 @@
   --spacing-2xl: 64px;
   --spacing-3xl: 80px;
   --spacing-4xl: 96px;
+
+  --radius-none: 0px;
+  --radius-2xs: 12px;
+  --radius-xs: 24px;
+  --radius-s: 36px;
+  --radius-m: 48px;
+  --radius-l: 60px;
+  --radius-xl: 72px;
+  --radius-2xl: 96px;
+  --radius-3xl: 120px;
+  --radius-full: 999px;
 }
 
 h1 {
