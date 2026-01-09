@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
   --background: #ffffff;
@@ -8,8 +8,50 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  /* Fonts config */
+  --font-nunito: var(--font-nunito);
+  --font-dm-sans: var(--font-dm-sans);
+}
+
+h1 {
+  @apply font-nunito font-bold text-5xl leading-18 tracking-normal;
+}
+
+h2 {
+  @apply font-nunito font-bold text-[40px] leading-15 tracking-normal;
+}
+
+h3 {
+  @apply font-nunito font-bold text-[34px] leading-12.75 tracking-normal;
+}
+
+h4 {
+  @apply font-nunito font-bold text-[28px] leading-10.5 tracking-normal;
+}
+
+h5 {
+  @apply font-nunito font-bold text-2xl leading-9 tracking-normal;
+}
+
+h6 {
+  @apply font-nunito font-bold text-xl leading-7.5 tracking-normal;
+}
+
+.b-1 {
+  @apply font-dm-sans text-base leading-6 tracking-normal;
+}
+
+.b-2 {
+  @apply font-dm-sans text-sm leading-5.25 tracking-normal;
+}
+
+.b-3 {
+  @apply font-dm-sans text-xs leading-4.5 tracking-normal;
+}
+
+.b-4 {
+  @apply font-dm-sans text-[10px] leading-3.75 tracking-normal;
 }
 
 @media (prefers-color-scheme: dark) {
