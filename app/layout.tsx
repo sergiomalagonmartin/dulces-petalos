@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 import './globals.css';
+import { Header } from '@/components/header';
 
 const nunito = localFont({
   src: '../public/fonts/Nunito.ttf',
@@ -26,7 +27,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${nunito.variable} ${dmSans.variable} antialiased`}>{children}</body>
+      <body className={`${nunito.variable} ${dmSans.variable} antialiased`}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
