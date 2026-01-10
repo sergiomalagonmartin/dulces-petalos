@@ -12,7 +12,7 @@ export function Searchbar({ onChange }: SearchbarProps) {
   const debouncedSearch = debounce((event: ChangeEvent<HTMLInputElement>) => {
     const { value } = event.target;
     onChange(value);
-  }, 300);
+  }, 150);
 
   return (
     <div className='max-w-150 w-full border-neutral-400 bg-neutral-100 border rounded-[8px] py-2xs px-xs flex gap-x-2.5'>
