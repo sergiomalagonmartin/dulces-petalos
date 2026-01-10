@@ -17,8 +17,8 @@ export function FlowerCard({ id, title, binominalName, price, image, isNew }: Fl
   return (
     <div className='flex flex-col w-full max-w-[384px] rounded-[32px] p-xs gap-xs bg-neutral-100 shadow-300'>
       <div className='flex flex-col gap-2xs w-fit'>
-        <h4>{title}</h4>
-        <p className='b-1'>{binominalName}</p>
+        <h4 className='text-neutral-1000'>{title}</h4>
+        <p className='b-1 text-neutral-800'>{binominalName}</p>
       </div>
 
       <div className='relative h-75 w-full'>
