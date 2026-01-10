@@ -2,6 +2,11 @@ import type { ReactNode } from 'react';
 import { AngleRight } from './icons/angle-right';
 import Link from 'next/link';
 
+interface BreadcrumbProps {
+  title: string;
+  href?: string;
+}
+
 export function Breadcrumbs({ children }: { children: ReactNode[] }) {
   const breadcrumbs = [];
 
@@ -16,7 +21,7 @@ export function Breadcrumbs({ children }: { children: ReactNode[] }) {
   return <div className='flex gap-3xs'>{breadcrumbs}</div>;
 }
 
-export function Breadcrumb({ title, href }: { title: string; href?: string }) {
+export function Breadcrumb({ title, href }: BreadcrumbProps) {
   if (href) {
     return (
       <Link href={href} className='b-1 text-neutral-800'>
