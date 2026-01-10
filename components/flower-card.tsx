@@ -5,7 +5,10 @@ import { Arrow } from './icons/arrow';
 import { Tag } from './tag';
 import type { Flower } from '@/lib/types';
 
-type FlowerCardProps = Flower & { isNew: boolean; className?: string };
+interface FlowerCardProps extends Flower {
+  isNew: boolean;
+  className?: string;
+}
 
 export function FlowerCard({ id, name, binomialName, price, imgUrl, isNew, className = '' }: FlowerCardProps) {
   return (
